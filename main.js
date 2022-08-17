@@ -37,3 +37,4 @@ let obj = {
 
 alert(obj.test);
 alert('test' in obj);
+alert('key' in obj);
