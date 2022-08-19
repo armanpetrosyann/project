@@ -1,40 +1,11 @@
 'use strict';
 
-// let user = {
-//     name: 'John',
-//     age: 30,
-// };
-//
-// delete user.age;
-//
-// if (user.age === null || user.age === undefined) {
-//     alert('Age is deleted');
-// }
-//
-// alert(`User name is ${user.name}, user age is ${user.age}`)
+let user = {
+    name: "John",
+}
 
-// function makeUser(name, age) {
-//     return {
-//         name: 'John',
-//         age: 30
-//     };
-// }
-//
-// let user = makeUser();
-// alert(user.name);
-// alert(user.age);
-//
-// if ('year' in user) {
-//     alert('Found');
-// } else {
-//     alert('not found');
-// }
+let id = Symbol("id");
 
-
-let obj = {
-    test: undefined
-};
-
-alert(obj.test);
-alert('test' in obj);
-alert('key' in obj);
+user[id] = 1;
+alert(`User name is ${user.name} and user id is ${user[id]}`);
+debugger;
